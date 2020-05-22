@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <title>Festival </title>
@@ -23,14 +24,14 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">News</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#news">News</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
+                  <a class="nav-link" href="#schedule">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#subscribe">Subscription</a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -38,9 +39,9 @@
     <section class="container-fluid " id="home">
      <div class="row text-white align-items-center h-100">
         <div class="col-6 mx-auto text-center">
-            <p>Annual Film Festival</p>
-            <p>Boston 2020</p>
-            <button type="button" class="btn btn-outline-light align-center">View More</button>
+            <p id="title">Annual Film Festival</p>
+            <p id="subtitle">Boston 2020</p>
+            <a href="#listofmovie"><button type="button" class="btn btn-outline-light align-center">View More</button></a>
         </div>
      </div>
     </section>
@@ -50,7 +51,7 @@
             <div class="col-md-6 col-sm-12 mx-auto text-center" style="color: #F7410A;">
                 <h1>The Boston Films Festival is one of the bigest festival in the word, founded in 1998.</h1>
             </div>
-            <div class="col-md-6 col-sm-12 mx-auto text-center mt-5">
+            <div id="desc" class="col-md-6 col-sm-12 mx-auto text-center mt-5">
                 <p class="text-justify ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim facilisis gravida neque convallis. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Arcu vitae elementum curabitur vitae. Tortor aliquam nulla facilisi cras. Urna cursus eget nunc scelerisque. Orci ac auctor augue mauris augue neque gravida in fermentum. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Quis auctor elit sed vulputate mi sit amet mauris commodo. Nunc scelerisque viverra mauris in aliquam sem fringilla. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Volutpat blandit aliquam etiam erat velit scelerisque in. Nec ullamcorper sit amet risus nullam eget felis eget nunc. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Sapien pellentesque habitant morbi tristique.</p>
                 <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim facilisis gravida neque convallis. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Arcu vitae elementum curabitur vitae. Tortor aliquam nulla facilisi cras. Urna cursus eget nunc scelerisque. Orci ac auctor augue mauris augue neque gravida in fermentum. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Quis auctor elit sed vulputate mi sit amet mauris commodo. Nunc scelerisque viverra mauris in aliquam sem fringilla. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Volutpat blandit aliquam etiam erat velit scelerisque in. Nec ullamcorper sit amet risus nullam eget felis eget nunc. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Sapien pellentesque habitant morbi tristique.</p>
             </div>
@@ -58,11 +59,12 @@
     </section>
 
     <section class="container-fluid" id="listofmovie" style="width: 100%; height: auto; background-color: #ffffff;">
+      <br><br>
       <h1 style="color: #F7410A;">List of Movies</h1> 
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-4">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3  mt-4">
           <div class="card" style="width: 18rem;">
-            <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
+            <img src="/images/casadepapel.jpg" class="card-img-top" alt="casadepapel">
             <div class="card-body">
               <h3 class="text-center">Casa de Papel</h3>
               <p><strong>Type:</strong> Action | Policier</p>
@@ -70,123 +72,197 @@
             </div>
           </div>
         </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/images/beats_vertical-main_rgb_pre.jpg" class="card-img-top" alt="beats_vertical-main_rgb_pre">
+            <div class="card-body">
+              <h3 class="text-center">Beats</h3>
+              <p><strong>Type:</strong> Action | Policier | Art</p>
+              <p><strong>Duration:</strong> 5 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/images/black-panther-web.jpg" class="card-img-top" alt="black-panther-web">
+            <div class="card-body">
+              <h3 class="text-center">Black Panther</h3>
+              <p><strong>Type:</strong> Action | Policier | Marvel</p>
+              <p><strong>Duration:</strong> 5 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/images/titanic.jpg" class="card-img-top" alt="titanic">
+            <div class="card-body">
+              <h3 class="text-center">Titanic</h3>
+              <p><strong>Type:</strong> Drama</p>
+              <p><strong>Duration:</strong> 5 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/images/jordan-peele-us-poster.jpg" class="card-img-top" alt="When they see us">
+            <div class="card-body">
+              <h3 class="text-center">When They see us</h3>
+              <p><strong>Type:</strong>Drama</p>
+              <p><strong>Duration:</strong> 5 hours</p>
+            </div>
+          </div>
+        </div>
+       
+        
+      </div>
+      <br>
+    </section>
+
+    <section id="schedule" class="container-fluid" style="width: 100%; height: auto; background-color: #010020;">
+      <br><br><br><br><br><br>
+      <h1 id="infotext" class="text-center pt-4" style="color: #F7410A;"> The Schedule</h1> 
+      <div class="container"></div>
+         <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h4 class="text-center text-white">August 5, 2020</h4>
+            <ul class="list-group" style="list-style-type: none;">
+              <li class="list-group-item"><strong>6 PM: </strong> Lorem, ipsum dolor sit .</li>
+              <li class="list-group-item"><strong>7 PM: </strong>  Lorem, ipsum dolor sit .</li>
+              <li class="list-group-item"><strong>9 PM: </strong>  Lorem, ipsum dolor sit .</li>
+              <li class="list-group-item"><strong>11 PM: </strong>  Lorem, ipsum dolor sit</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 ">
+            <h4 class="text-center text-white">August 6, 2020</h4>
+            <ul class="list-group" style="list-style-type: none;">
+              <li class="list-group-item"><strong>6 PM: </strong> Lorem, ipsum dolor sit .</li>
+              <li class="list-group-item"><strong>7 PM: </strong>  Lorem, ipsum dolor sit .</li>
+              <li class="list-group-item"><strong>9 PM: </strong>  Lorem, ipsum dolor sit .</li>
+              <li class="list-group-item"><strong>11 PM: </strong>  Lorem, ipsum dolor sit</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h4 class="text-center text-white">August 7, 2020</h4>
+            <ul class="list-group" style="list-style-type: none;">
+              <li class="list-group-item"><strong>6 PM: </strong> Lorem, ipsum dolor sit .</li>
+              <li class="list-group-item"><strong>7 PM: </strong>  Lorem, ipsum dolor sit .</li>
+              <li class="list-group-item"><strong>9 PM: </strong>  Lorem, ipsum dolor sit .</li>
+              <li class="list-group-item"><strong>11 PM: </strong>  Lorem, ipsum dolor sit</li>
+            </ul>
+         </div>
+         <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="text-center text-white">August 8, 2020</h4>
+          <ul class="list-group" style="list-style-type: none;">
+            <li class="list-group-item"><strong>6 PM: </strong> Lorem, ipsum dolor sit .</li>
+            <li class="list-group-item"><strong>7 PM: </strong>  Lorem, ipsum dolor sit .</li>
+            <li class="list-group-item"><strong>9 PM: </strong>  Lorem, ipsum dolor sit .</li>
+            <li class="list-group-item"><strong>11 PM: </strong>  Lorem, ipsum dolor sit</li>
+            </ul>
+        </div>
+         </div>
+      </div>
+      <br><br><br><br><br><br><br><br>
+    </section>
+
+    <section class="container-fluid" id="news" style="width: 100%; height: auto; background-color: #ffffff;">
+      
+      <div class="row align-items-center h-100">
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
           <div class="card" style="width: 18rem;">
-            <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
+            <img src="/images/festi.jpg" class="card-img-top" alt="feticannes">
             <div class="card-body">
-              <h3 class="text-center">Casa de Papel</h3>
-              <p><strong>Type:</strong> Action | Policier</p>
-              <p><strong>Duration:</strong> 5 hours</p>
+              <h3 class="text-center">From Cannes to Boston</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
           <div class="card" style="width: 18rem;">
-            <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
+            <img src="/images/BlackStar_Film_Festival_screening_A_Ricketts_2200VP.jpg" class="card-img-top" alt="Star">
             <div class="card-body">
-              <h3 class="text-center">Casa de Papel</h3>
-              <p><strong>Type:</strong> Action | Policier</p>
-              <p><strong>Duration:</strong> 5 hours</p>
+              <h3 class="text-center">Movies of the Year</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
           <div class="card" style="width: 18rem;">
-            <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
+            <img src="/images/WireImage-1129758056-1440x810.jpg" class="card-img-top" alt="wire">
             <div class="card-body">
-              <h3 class="text-center">Casa de Papel</h3>
-              <p><strong>Type:</strong> Action | Policier</p>
-              <p><strong>Duration:</strong> 5 hours</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
-          <div class="card" style="width: 18rem;">
-            <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="text-center">Casa de Papel</h3>
-              <p><strong>Type:</strong> Action | Policier</p>
-              <p><strong>Duration:</strong> 5 hours</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
-          <div class="card" style="width: 18rem;">
-            <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="text-center">Casa de Papel</h3>
-              <p><strong>Type:</strong> Action | Policier</p>
-              <p><strong>Duration:</strong> 5 hours</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
-          <div class="card" style="width: 18rem;">
-            <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="text-center">Casa de Papel</h3>
-              <p><strong>Type:</strong> Action | Policier</p>
-              <p><strong>Duration:</strong> 5 hours</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
-          <div class="card" style="width: 18rem;">
-            <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h3 class="text-center">Casa de Papel</h3>
-              <p><strong>Type:</strong> Action | Policier</p>
-              <p><strong>Duration:</strong> 5 hours</p>
+              <h3 class="text-center">Best Actors</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
       </div>
       <br>
     </section>
-
-    <section id="info" class="container-fluid" style="width: 100%; height: 500px; background-color: #010020;">
-      <h1 class="text-center pt-4" style="color: #F7410A;"> The Schedule</h1> 
+    <section id="sponsors" class="container-fluid" style="width: 100%; height: auto; background-color: #010020; padding-top: 50px;">
       <div class="container">
-         <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 text-white">
-            <h4>August 5, 2020</h4>
-            <ul class="list-group" style="list-style-type: none;">
-              <li class="list-group-items">6pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">7pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">9pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">11pm: Lorem, ipsum dolor sit</li>
-            </ul>
+        <h1 class="mt-5 text-center" style="color: #F7410A;">Our Sponsors</h1> 
+        <div class="row mt-5">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+            <a href="https://www.boston.gov/" target="_blank"><img src="/images/boston.png" alt="boston" height="150px"></a>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 text-white">
-            <h4>August 6, 2020</h4>
-            <ul class="list-group" style="list-style-type: none;">
-              <li class="list-group-items">6pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">7pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">9pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">11pm: Lorem, ipsum dolor sit</li>
-            </ul>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+            <a href="https://www.paramount.com/" target="_blank"><img src="/images/FAVPNG_paramount-pictures-logo-film-universal-pictures_8hDR96x6.png" alt="boston" height="120px"></a>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 text-white">
-            <h4>August 7, 2020</h4>
-            <ul class="list-group" style="list-style-type: none;">
-              <li class="list-group-items">6pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">7pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">9pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">11pm: Lorem, ipsum dolor sit</li>
-            </ul>
-         </div>
-         <div class="col-12 col-md-6 col-lg-3 text-white">
-          <h4>August 8, 2020</h4>
-          <ul class="list-group" style="list-style-type: none;">
-              <li class="list-group-items">6pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">7pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">9pm: Lorem, ipsum dolor sit .</li>
-              <li class="list-group-items">11pm: Lorem, ipsum dolor sit</li>
-            </ul>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+            <a href="https://www.universalpictures.com/" target="_blank"><img src="/images/FAVPNG_universal-pictures-universals-islands-of-adventure-universal-studios-hollywood-logo-film-studio_f2Q4VKPv.png" alt="Universal" height="120"></a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-4">
+            <a href="http://www.google.com/" target="_blank"><img src="/images/kisspng-google-logo-pixel-google-images-5b67449c113db3.4712173115334944280706.png" alt="Google" height="170"></a>
+          </div>
         </div>
-         </div>
+      </div>
       </div>
     </section>
+    <footer id="subscribe"  class="container-fluid"  style="width: 100%; height: auto; background-color: #010020;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12  container">
+            <div style="background-color: #fff; width: auto; height: 500px; margin: 0 auto; margin-top: 200px;">
+              <h2 class="text-center pd-5" style="color: #F7410A;">Subscription</h2>
+               <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <form>
+                      <div class="form-group">
+                        <label for="Name">First Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="name">
+                      </div>
+                      <div class="form-group">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="lastname">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="email">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                  </div>
+                </div>
+               </div>
+            </div>
+     
+          <div id="social" class="text-white text-center" style="margin-top: 100px;">
+            <ul class="list-inline">
+              <li class="list-inline-item">Follow Us:</li>
+              <li class="list-inline-item"><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            <p>Powered by: <a href="https://twitter.com/jozzbruer" target="blank">Quince Joz-Bruer</a> </p>
+            <p>&copy; Watch it Outside 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </footer>
 
 
     <!-- Optional JavaScript -->
@@ -196,3 +272,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
+

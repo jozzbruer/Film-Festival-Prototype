@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
 
-body{
-    background-color: #F7410A;
-}
 #home{
     background-image: url("/images/home.jpg");
     height: 700px;

@@ -18,14 +18,14 @@ p{
 }
 .title{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 110px;
+    font-size: 6vw;
     font-weight: 100;
     color: #fff;
 }
 
 #subtitle{
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 h1{

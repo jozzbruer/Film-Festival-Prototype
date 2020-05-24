@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
 
+body{
+    background-color: #F7410A;
+}
 #home{
     background-image: url("/images/home.jpg");
     height: 700px;
@@ -47,7 +50,38 @@ li a :hover{
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:visited,
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-outline-light,
+.btn-outline-light:hover {
     background-color: #F7410A !important;
     border-color: #F7410A;
+}
+
+nav{
+    background-color: #F7410A;
+}
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+
+.navbar-brand {
+    color: black;
+    font-size: x-large;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+.navbar-brand:hover{
+    color: black;
+}
+#copyright:hover{
+    color: #F7410A;
+    text-decoration: none;
 }

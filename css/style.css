@@ -91,7 +91,12 @@ nav{
     text-decoration: none;
 }
 
-span{
+strong{
     color: #F7410A;
     font-weight: bold;
+}
+
+
+#sponsors{
+    padding-left: 60px;
 }
